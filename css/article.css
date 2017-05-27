@@ -1,0 +1,153 @@
+.content_wrap {
+    width: 780px;
+    margin: 0 auto;
+    min-height: 700px;
+    background: #fff;
+    padding: 70px 160px 220px 160px;
+}
+
+.content_wrap .big_title {
+    line-height: 60px;
+}
+
+.content_wrap .big_title, .content_wrap > h2 {
+    text-align: center;
+    font-size: 54px;
+    color: #311759
+}
+
+.content_wrap > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+
+.content_wrap > img {
+    margin: 15px auto 0;
+    display: block;
+}
+
+.title_list {
+    color: #311759;
+    font-size: 30px;
+    background: url(../images/pen_line_long.png) no-repeat -320px 58px;
+    height: 60px;
+    position: relative;
+    margin-top: 70px;
+}
+
+.title_list .pen {
+    width: 61px;
+    height: 58px;
+    background: url(../images/pen_article.png) no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.title_list .pen:hover {
+    background-position: -61px 0;
+}
+
+.auther {
+    color: #6b6a6f;
+    padding-top: 15px;
+    margin-bottom: 60px;
+}
+
+.auther span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article_content .article_img {
+    width: 100%;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.like_btn_wrap {
+    margin-top: 80px;
+    margin-left: 350px;
+    width: 73px;
+    height: 73px;
+    overflow: hidden;
+}
+.like_btn_wrap:hover {
+    width:213px;
+    transition: all 0.5s ease 0s;
+}
+.like_btn_wrap .like_show_box {
+    width: 220px;
+}
+
+.like_show_box .like_btn {
+    width: 73px;
+    height: 73px;
+    float: left;
+    background: url(../images/article_iflike.png) no-repeat;
+    cursor: pointer;
+}
+
+.like_show_box .like_num {
+    width: 135px;
+    height: 35px;
+    float: left;
+    margin-left: 5px;
+    background: url(../images/article_iflike_nomberbg.png) no-repeat;
+    margin-top: 19px;
+    padding-top: 8px;
+    color: #fff;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.like_show_box .like_btn:hover {
+    animation: 1s linear 0s normal none 1 running su-pudding;
+}
+
+
+/*返回顶部*/
+.fixed_tip {
+    width: 87px;
+    height: 161px;
+    position: fixed;
+    bottom: 160px;
+    right: 40px;
+    display: none;
+}
+
+.fixed_tip.show {
+    display: block;
+}
+
+.fixed_contactus:hover {
+    width: 235px;
+    animation: 1s linear 0s normal none 1 running su-pudding;
+    transition: all 0.5s ease 0s;
+}
+
+.fixed_contactus {
+    width: 87px;
+    height: 87px;
+    position: absolute;
+    right: 0;
+    top: 74px;
+    background: url(../images/fixed_contactus.png) top right no-repeat;
+    cursor: pointer;
+}
+
+.scroll_top {
+    background: url(../images/scroll_top_bg.png) no-repeat;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 17px;
+    margin-bottom: 24px;
+}
+
+.scroll_top:hover {
+    background-position: 0 -50px;
+    transition: all 0.3s ease 0s;
+}

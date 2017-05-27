@@ -1,0 +1,198 @@
+/*内容样式*/
+.content_wrap {
+    width: 1100px;
+    margin: 0 auto;
+    min-height: 500px;
+    padding-top: 120px;
+    overflow: hidden;
+}
+
+.content_wrap .big_title, .content_wrap > h2 {
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+}
+
+.content_wrap .big_title {
+    line-height: 60px;
+}
+
+.content_wrap > img {
+    display: block;
+    margin: 15px auto 0;
+}
+
+.content_wrap .list_title {
+    color: #311759;
+    font-size: 30px;
+    background: url(../images/pen_line_long.png) no-repeat 0 58px;
+    height: 60px;
+    position: relative;
+}
+
+.content_wrap .pen {
+    width: 61px;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    cursor: pointer;
+    background: url("../images/pen_list.png");
+}
+
+.content_wrap .pen:hover {
+    background-position: -61px 0;
+}
+
+.list_content {
+    padding-top: 40px;
+    overflow: hidden;
+    width: 1130px;
+}
+
+.list_content .list_item {
+    width: 513px;
+    height: 202px;
+    float: left;
+    background: #fff;
+    padding: 36px 0 0 20px;
+    margin: 0 20px 30px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.list_content .list_item:hover {
+    border-color: #86759e;
+    transform: translateY(-6px);
+    transition: all 0.3s ease 0s;
+}
+
+.list_item .img_wrap {
+    height: 168px;
+    width: 260px;
+    overflow: hidden;
+    float: left;
+    margin-right: 17px;
+}
+
+.img_wrap img {
+    width: 260px;
+}
+
+.list_item .content_text {
+    width: 221px;
+    float: left;
+}
+
+.content_text .title_small {
+    font-size: 20px;
+    color: #454548;
+    line-height: 26px;
+    max-height: 53px;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+.content_text .data {
+    color: #6b6a6f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.content_text > p {
+    padding-top: 8px;
+    color: #47464a;
+    line-height: 25px;
+    max-height: 75px;
+    overflow: hidden;
+    font-family: KaiTi_GB2312;
+    letter-spacing: 0px;
+}
+
+.list_item .list_img_jiantou {
+    position: absolute;
+    left: 0;
+    top: 36px;
+}
+
+.list_item:hover .list_img_jiantou {
+    left: 50px;
+    transition: left 0.3s ease 0s;
+}
+
+.content_wrap .more_img {
+    display: block;
+    margin: 30px auto 0;
+}
+
+.content_wrap .list_more {
+    height: 58px;
+    width: 58px;
+    background: url(../images/lis_more_btn_bg.png) no-repeat 0 -58px;
+    margin: 15px auto 130px;
+    cursor: pointer;
+}
+
+.content_wrap .list_more:hover {
+    background-position: 0 0;
+    transition: all 0.3s ease 0s;
+}
+
+#articleModel {
+    display: none;
+}
+
+
+/*连接尾部的图像*/
+.link_footer_img {
+    background: url(../images/map_bottomimg.png) top center no-repeat;
+    height: 33px;
+    width: 100%;
+    min-width: 1100px;
+}
+
+/*返回顶部*/
+.fixed_tip {
+    width: 87px;
+    height: 161px;
+    position: fixed;
+    bottom: 160px;
+    right: 40px;
+    display: none;
+}
+
+.fixed_tip.show {
+    display: block;
+}
+
+.fixed_contactus:hover {
+    width: 235px;
+    animation: 1s linear 0s normal none 1 running su-pudding;
+    transition: all 0.5s ease 0s;
+}
+
+.fixed_contactus {
+    width: 87px;
+    height: 87px;
+    position: absolute;
+    right: 0;
+    top: 74px;
+    background: url(../images/fixed_contactus.png) top right no-repeat;
+    cursor: pointer;
+}
+
+.scroll_top {
+    background: url(../images/scroll_top_bg.png) no-repeat;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 17px;
+    margin-bottom: 24px;
+}
+
+.scroll_top:hover {
+    background-position: 0 -50px;
+    transition: all 0.3s ease 0s;
+}

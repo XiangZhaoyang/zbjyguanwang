@@ -1,0 +1,584 @@
+/*透明度变化动画*/
+@keyframes myOpaque {
+    0% {opacity: 0;}
+    12.5% {opacity: 0.25;}
+    25% {opacity: 0.5;}
+    37.5% {opacity: 0.75;}
+    50% {opacity: 1;}
+    62.5% {opacity: 0.75;}
+    75% {opacity: 0.5;}
+    87.5% {opacity: 0.25;}
+    100% {opacity: 0;}
+}
+
+/*头部样式*/
+.header_wrap {
+    background: #221236 url(../images/aboutxiaoniao/beader_bg.jpg) top center;
+    width: 100%;
+    min-width: 1100px;
+    position: fixed;
+    z-index: 999;
+}
+
+.header_wrap .header {
+    height: 50px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header .log, .header .log .log_img {
+    width: 132px;
+    height: 50px;
+    float: left;
+}
+
+.header .nav_wrap {
+    width: 930px;
+    margin: 0 auto;
+    height: 25px;
+    line-height: 25px;
+    float: right;
+    padding-top: 11px;
+    text-align: right;
+}
+
+.header .nav_item {
+    float: left;
+    position: relative;
+}
+
+.nav_item > h1 {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    color: #aeabb4;
+    background: url(../images/nav_now_bg.png) no-repeat -5px 0;
+}
+
+.now > h1 {
+    background: url(../images/nav_now_bg.png) no-repeat bottom center;
+    color: #fff;
+}
+
+h1.hover {
+    background-position: bottom center;
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+/*内容样式*/
+#content {
+    width: 100%;
+}
+
+.content_wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_wrap{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.banner_wrap .banner_item {
+    width: 100%;
+    position: relative;
+}
+
+.welcome_animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgb(14,154,214);
+}
+
+.welcome2_warp {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgb(34, 18, 54);
+    overflow: hidden;
+}
+
+.welcome_warp {
+    position: absolute;
+    width: 545px;
+    height: 545px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.welcome_animation .welcome_warp .wlecome_ion {
+    position: relative;
+}
+
+.welcome_animation .welcome_warp .animItems .animItem {
+    position: relative;
+    opacity: 0;
+}
+
+.banner_item .bannerContent {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.welcome2_warp .wlecome_ion > img, .welcome_warp .wlecome_ion > img{
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome2_warp .title_big, .welcome_warp .title_big{
+    font-size: 44px;
+    line-height: 48px;
+}
+
+.welcome2_warp .title_small, .welcome_warp .title_small {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+}
+
+.welcome2_warp .title_declare .zuo, .welcome2_warp .title_declare .you,
+.welcome_warp .title_declare .zuo, .welcome_warp .title_declare .you{
+    position: relative;
+}
+
+.welcome2_warp .title_declare .zuo,
+.welcome_warp .title_declare .zuo{
+    top: -30px;
+}
+
+.welcome2_warp .title_declare .you,
+.welcome_warp .title_declare .you{
+    bottom: -16px;
+}
+
+.welcome2_warp .title_declare .middle,
+.welcome_warp .title_declare .middle{
+    font-size: 48px;
+}
+
+.welcome2_warp .text_p,
+.welcome_warp .text_p{
+    margin-top: 20px;
+}
+
+.welcome2_warp .nextBtn {
+    height: 58px;
+    width: 58px;
+    background: url(../images/aboutxiaoniao/donext.png) 0 -58px no-repeat;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.welcome2_warp .nextBtn:hover {
+    background-position: 0 0;
+    transition: all 0.4s ease 0s;
+}
+
+
+.gaishu {
+    text-align: center;
+    background-color: #ffffff;
+    /*overflow: hidden;*/
+}
+
+.gaishu .gaishu_slider {
+    position: absolute;
+    width: 6000px;
+}
+
+.gaishu_slider .gaishu_item {
+    float: left;
+}
+
+.gaishu .gaishu_title {
+    padding-top: 75px;
+    font-size: 54px;
+    color: #311759;
+    font-weight: bold;
+}
+
+.gaishu .ems {
+    font-size: 18px;
+    color: #6b6a6f;
+    width: 630px;
+    line-height: 30px;
+    margin: 20px auto 0;
+    position: relative;
+}
+
+.gaishu .ems + p{
+    width: 730px;
+    margin: 55px auto 0;
+    line-height: 30px;
+    font-size: 18px;
+    color: #6b6a6f;
+    text-align: left;
+    text-indent: 2em;
+}
+
+
+.gaishu .ems .zuo, .gaishu .ems .you {
+    position: absolute;
+}
+
+.gaishu .ems .zuo {
+    left: -30px;
+    top: 0;
+}
+
+.gaishu .ems .you {
+    right: -30px;
+    bottom: 0;
+}
+
+.gaishu .show_imgs {
+    width: 884px;
+    height: 399px;
+    margin: 0 auto;
+}
+
+.gaishu .show_img {
+    width: 191px;
+    height: 397px;
+    margin-top: 20px;
+    margin-right: 30px;
+    float: left;
+}
+
+.gaishu .show_img > img {
+    width: 191px;
+    height: 397px;
+}
+
+.gaishu_item .gaishu_block_content {
+    width: 700px;
+    height: 560px;
+    color: #6b6a6f;
+    text-align: left;
+    margin: 230px auto 0;
+}
+
+.gaishu_block_content .title_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gaishu_block_content .block_item {
+    width: 700px;
+    height: 99px;
+    margin-top: 50px;
+}
+
+.gaishu_block_content .block_item > * {
+    float: left;
+}
+
+.gaishu_block_content .block_item img {
+    width: 98px;
+    height: 99px;
+}
+
+.gaishu_block_content .block_item .black_item_text {
+    width: 520px;
+    margin-left: 55px;
+}
+
+.gaishu_block_content .block_item .text_big {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.gaishu_block_content .block_item .text_small {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.gaishu_item.item3 .gaishu_block_content {
+    height: 560px;
+    top: 45%;
+    margin: 200px auto 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gaishu_item.item3 .gaishu_block_content .ems {
+    color: #221236;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.gaishu_item.item3 .gaishu_block_content .ems .zuo,
+.gaishu_item.item3 .gaishu_block_content .ems .you {
+    position: relative;
+}
+
+.gaishu_item.item3 .gaishu_block_content .ems .zuo {
+    left: 0;
+    top: -15px;
+}
+
+.gaishu_item.item3 .gaishu_block_content .ems .you {
+    right: 0;
+    bottom: -10px;
+}
+
+.gaishu_item.item3 .gaishu_block_content > p {
+    width: 730px;
+    margin: 55px auto 0;
+    line-height: 30px;
+    font-size: 18px;
+    color: #6b6a6f;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.gaishu_item.item3 .gaishu_block_content > img {
+    margin-top: 90px;
+}
+
+.gaishu .lastBtn, .gaishu .nextBtn {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+}
+
+.gaishu .lastBtn {
+    left: 20px;
+    background: url("../images/aboutxiaoniao/goleft.png");
+}
+
+.gaishu .lastBtn:hover {
+    background-position: -58px 0;
+    transition: all 0.4s ease 0s;
+}
+
+.gaishu .nextBtn {
+    right: 20px;
+    background: url("../images/aboutxiaoniao/goright.png") -58px 0;
+}
+
+.gaishu .nextBtn:hover {
+    background-position: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.jiazhi {
+    color: #ffffff;
+    background-color: rgb(34, 18, 54);
+}
+
+.jiazhi .bannerContent {
+    width: 970px;
+    height: 560px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.jiazhi .bannerContent .jiazhi_title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.jiazhi_top_img, .jiazhi_bottom_img {
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+.jiazhi_top_img .img_left,
+.jiazhi_top_img .img_right,
+.jiazhi_bottom_img .img_left,
+.jiazhi_bottom_img .img_right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.jiazhi_top_img img, .jiazhi_bottom_img img {
+    position: absolute;
+}
+
+.jiazhi_top_img .anim, .jiazhi_bottom_img .anim {
+    animation: myOpaque 2s linear 0s infinite;
+}
+
+.jiazhi_top_img .img_left, .jiazhi_bottom_img .img_left {
+    left: 0;
+    top: 0;
+}
+
+.jiazhi_top_img .img_right, .jiazhi_bottom_img .img_right {
+    right: 0;
+    top: 0;
+}
+
+.jiazhi .bannerContent .jiazhi_content {
+    height: 317px;
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.jiazhi_content .content_item {
+    float: left;
+    width: 390px;
+    margin-right: 30px;
+    margin-bottom: 46px;
+}
+
+.jiazhi_content .content_item .num {
+    width: 74px;
+    height: 74px;
+    background: url(../images/aboutxiaoniao/jiazhi_quanquan.png) no-repeat;
+    line-height: 74px;
+    text-align: center;
+    margin-right: 27px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jiazhi_content .content_item > p {
+    float: left;
+    width: 289px;
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.zhangyun_content {
+    width: 910px;
+    height: 560px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.zhangyun_content .zhangyun_title {
+    font-size: 54px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #311759;
+}
+
+.zhangyun_slider_wrap {
+    height: 420px;
+    width: 910px;
+    overflow: hidden;
+    position: relative;
+}
+
+.zhangyun_slider {
+    width: 1820px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.zhangyun_slider > div {
+    width: 910px;
+    float: left;
+    line-height: 36px;
+    background: url(../images/aboutxiaoniao/xuxian_bg.png);
+    font-size: 16px;
+    font-family: KaiTi_GB2312;
+    color: #535355;
+}
+
+.zhangyun_slider .text_index {
+    text-indent: 2em;
+}
+
+.zhangyun .btnBox {
+    width: 204px;
+    height: 8px;
+    margin: 0 auto;
+}
+
+.zhangyun .btnBox .move_left, .zhangyun .btnBox .move_right {
+    width: 78px;
+    height: 8px;
+    margin: 0 12px;
+    float: left;
+    cursor: pointer;
+    background: url("../images/aboutxiaoniao/xiaoniaoyun_btn.png") 0 8px;
+}
+
+.zhangyun .btnBox span {
+    display: block;
+    width: 78px;
+    height: 8px;
+    background: url("../images/aboutxiaoniao/xiaoniaoyun_btn.png") no-repeat;
+}
+
+.zhangyun .btnBox .move_right span {
+    background-position: -78px 0;
+}
+
+.appDload {
+    background: url("../images/aboutxiaoniao/app&contacts_bg.gif") center 30%;
+}
+
+.appDload .bannerContent {
+    padding-top: 200px;
+}
+.appDload_content {
+    width: 810px;
+    height: 530px;
+    position: relative;
+}
+
+.app_dload > h1, .app_dload p{
+    color: #fff;
+    position: absolute;
+}
+
+.app_dload p {
+    left: 70px;
+}
+
+.app_dload h1 {
+    left: 450px;
+    top: 140px;
+}
+
+.contact_service {
+    width: 385px;
+    position: absolute;
+    left: 450px;
+}
+
+.contact_service h1 {
+    line-height: 60px;
+    height: 60px;
+    width: 380px;
+    background: url(../images/aboutxiaoniao/contacts_line.png) no-repeat bottom left;
+    color: #191919;
+    margin-bottom: 14px;
+}
+
+.contact_service p {
+    line-height: 32px;
+    color: #191919;
+}

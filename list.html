@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章列表</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/goTop.js"></script>
+    <script src="js/listData.js"></script>
+    <script src="js/list.js"></script>
+</head>
+<body>
+<!--头部-->
+<div id="header"></div>
+
+<!--内容-->
+<div id="content">
+    <div class="content_wrap">
+        <h1 class="big_title">小鸟动态</h1>
+        <h2>About Company</h2>
+        <img src="images/three_points01.png" alt="">
+        <h1 class="list_title">列表
+            <span class="pen"></span>
+        </h1>
+
+
+        <div class="list_content" id="articleList">
+            <!--<div class="list_item">-->
+                <!--<div class="img_wrap">-->
+                    <!--<img src="images/list_img01.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="content_text">-->
+                    <!--<div class="title_small">八戒教育重装出发</div>-->
+                    <!--<div class="data">2016-02-03</div>-->
+                    <!--<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>-->
+                <!--</div>-->
+                <!--<img src="images/list_img_over_xiaojiantou.png" alt="" class="list_img_jiantou">-->
+            <!--</div>-->
+            <!--<div class="list_item">-->
+                <!--<div class="img_wrap">-->
+                    <!--<img src="images/list_img01.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="content_text">-->
+                    <!--<div class="title_small">八戒教育重装出发</div>-->
+                    <!--<div class="data">2016-02-03</div>-->
+                    <!--<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>-->
+                <!--</div>-->
+                <!--<img src="images/list_img_over_xiaojiantou.png" alt="" class="list_img_jiantou">-->
+            <!--</div>-->
+            <!--<div class="list_item">-->
+                <!--<div class="img_wrap">-->
+                    <!--<img src="images/list_img01.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="content_text">-->
+                    <!--<div class="title_small">八戒教育重装出发</div>-->
+                    <!--<div class="data">2016-02-03</div>-->
+                    <!--<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>-->
+                <!--</div>-->
+                <!--<img src="images/list_img_over_xiaojiantou.png" alt="" class="list_img_jiantou">-->
+            <!--</div>-->
+            <!--<div class="list_item">-->
+                <!--<div class="img_wrap">-->
+                    <!--<img src="images/list_img01.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="content_text">-->
+                    <!--<div class="title_small">八戒教育重装出发</div>-->
+                    <!--<div class="data">2016-02-03</div>-->
+                    <!--<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>-->
+                <!--</div>-->
+                <!--<img src="images/list_img_over_xiaojiantou.png" alt="" class="list_img_jiantou">-->
+            <!--</div>-->
+            <!--<div class="list_item">-->
+                <!--<div class="img_wrap">-->
+                    <!--<img src="images/list_img01.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="content_text">-->
+                    <!--<div class="title_small">八戒教育重装出发</div>-->
+                    <!--<div class="data">2016-02-03</div>-->
+                    <!--<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>-->
+                <!--</div>-->
+                <!--<img src="images/list_img_over_xiaojiantou.png" alt="" class="list_img_jiantou">-->
+            <!--</div>-->
+            <!--<div class="list_item">-->
+                <!--<div class="img_wrap">-->
+                    <!--<img src="images/list_img01.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="content_text">-->
+                    <!--<div class="title_small">八戒教育重装出发</div>-->
+                    <!--<div class="data">2016-02-03</div>-->
+                    <!--<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>-->
+                <!--</div>-->
+                <!--<img src="images/list_img_over_xiaojiantou.png" alt="" class="list_img_jiantou">-->
+            <!--</div>-->
+        <!--</div>-->
+        </div>
+        <div id="articleModel">
+            <div class="list_item" articleid="$articleId$">
+                <div class="img_wrap">
+                    <img src="$articleImg$" alt="">
+                </div>
+                <div class="content_text">
+                    <div class="title_small">$articleTitle$</div>
+                    <div class="data">$updateTime$</div>
+                    <p>$describe$</p>
+                </div>
+                <img src="images/list_img_over_xiaojiantou.png" alt="" class="list_img_jiantou">
+            </div>
+        </div>
+        <img src="images/list_gomore_bg.jpg" alt="" class="more_img">
+
+        <div class="list_more"></div>
+
+    </div>
+</div>
+<!--连接尾部的图像-->
+<div class="link_footer_img"></div>
+
+<!--尾部-->
+<div id="footer"></div>
+
+<!--返回顶部-->
+<div class="fixed_tip" id="scrollTop_wrap">
+    <div class="scroll_top" id="scrollTop"></div>
+    <div class="fixed_contactus"></div>
+</div>
+</body>
+</html>

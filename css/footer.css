@@ -1,0 +1,58 @@
+/*底部*/
+
+.footer_warp {
+    height: 348px;
+    min-width: 1100px;
+    background: url(../images/yinyue_bg.jpg);
+}
+
+.footer {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.music {
+    padding: 116px 0 0 276px;
+    height: 67px;
+}
+
+.music .music_item {
+    float: left;
+    cursor: pointer;
+    width: 57px;
+    height: 57px;
+    margin-right: 26px;
+}
+
+.music .duo {
+    background: url('../images/yinyue_duo.png') no-repeat;
+}
+
+.music .lai {
+    background: url('../images/yinyue_lai.png') no-repeat;
+}
+
+.music .mi {
+    background: url('../images/yinyue_mi.png') no-repeat;
+}
+
+.music .fa {
+    background: url('../images/yinyue_suo.png') no-repeat;
+}
+
+.music .suo {
+    background: url('../images/yinyue_suo.png') no-repeat;
+}
+
+.music .la {
+    background: url('../images/yinyue_la.png') no-repeat;
+}
+
+.music .xi {
+    background: url('../images/yinyue_suo.png') no-repeat;
+}
+
+.music .music_item:hover {
+    background-position: 0 -57px;
+    animation: 1s linear 0s normal none 1 running su-pudding;
+}

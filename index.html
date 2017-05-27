@@ -2,112 +2,675 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>八戒教育</title>
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8">
+    <title>八戒教育</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="js/move.js"></script>
+    <script src="js/goTop.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </head>
 
 <body>
-	<!-- 头部 -->
-	<div id="header">
-		<div id="header_wrap">
-			<div class="header" class="clear">
-				<div class="log fl">
-					<img src="./images/logo.png" alt="八戒教育" class="logImg">
-				</div>
-				<div class="nav_wrap fr">
-					<div class="nav_item">
-						<h3>首页</h3>
-					</div>
-					<div class="nav_item has_childNav">
-						<h3>小鸟掌学
-							<span class="down_img"></span>
-						</h3>
-						<ul class="childNavs">
-							<li class="childNav"><a href="" class="childNavAnchor">学习主页</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">小鸟掌学概述</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">对企业的价值</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">小鸟掌学</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">微课联盟</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">App下载</a></li>
-						</ul>
-					</div>
-					<div class="nav_item">
-						<h3>小鸟动态</h3>
-					</div>
-					<div class="nav_item has_childNav">
-						<h3>企业文化
-							<span class="down_img"></span>
-						</h3>
-						<ul class="childNavs">
-							<li class="childNav"><a href="" class="childNavAnchor">公司理念</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">公司文化</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">公司氛围</a></li>
-						</ul>
-					</div>
-					<div class="nav_item has_childNav">
-						<h3>人力资源
-							<span class="down_img"></span>
-						</h3>
-						<ul class="childNavs">
-							<li class="childNav"><a href="" class="childNavAnchor">人才理念</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">团队介绍</a></li>
-							<li class="childNav"><a href="" class="childNavAnchor">招聘信息</a></li>
-						</ul>
-					</div>
-					<div class="nav_item">
-						<h3>联系我们</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- 头部 -->
+<div id="header">
+</div>
 
-	<!--内容-->
-	<div id="content">
-		<!--轮播-->
-		<div id="banner_wrap">
-			<!--轮播选择-->
-			<div class="banner_change">
-				<span class="prev"></span>
-				<div class="middle_points">
-					<div class="middle_wrap">
-						<div class="middle_items">
-							<spna class="middle_item middle_item_select"></spna>
-							<spna class="middle_item"></spna>
-							<spna class="middle_item middle_item_last"></spna>
-						</div>
-					</div>
-				</div>
-				<span class="next"></span>
-			</div>
-			<!--轮播项-->
-			<div class="banner_item banner_1">
-				<div class="banner_item_content">
-					<img src="./images/banner01_01.png" alt="" class="img1">
-					<img src="./images/banner01_02.png" alt="" class="img2">
-					<img src="./images/banner01_03.png" alt="" class="img3">
-				</div>
-			</div>
-			<div class="banner_item banner_2">
-				<div class="banner_item_content">
-					<img src="./images/banner02_01.png" alt="" class="img1">
-					<img src="./images/banner02_02.png" alt="" class="img2">
-					<img src="./images/banner02_03.png" alt="" class="img3">
-				</div>
-			</div>
-			<div class="banner_item banner_3">
-				<div class="banner_item_content">
-					<img src="./images/banner03_01.png" alt="" class="img1">
-					<img src="./images/banner03_02.png" alt="" class="img2">
-					<img src="./images/banner01_03.png" alt="" class="img3">
-				</div>
-			</div>
-		</div>
-		<!--主要产品-->
-	</div>
-	<div id="footer"></div>
+<!--内容-->
+<div id="content">
+    <!--轮播-->
+    <div id="banner_wrap">
+        <!--轮播选择-->
+        <div class="banner_change">
+            <span class="prev"></span>
+            <div class="middle_points">
+                <div class="middle_wrap">
+                    <div class="middle_items">
+                        <span item="banner_1" class="middle_item banner_1 middle_item_select"></span>
+                        <span item="banner_2" class="middle_item banner_2"></span>
+                        <span item="banner_3" class="middle_item banner_3 middle_item_last"></span>
+                    </div>
+                </div>
+            </div>
+            <span class="next"></span>
+        </div>
+        <!--轮播项-->
+        <div class="banner_item banner_1 show xiaoniaozhangxue" onclick="window.open('aboutXiaoniao.html')">
+            <div class="banner_item_content">
+                <img src="./images/banner01_01.png" alt="" class="img1 animated fadeInLeft">
+                <img src="./images/banner01_02.png" alt="" class="img2 animated fadeInRight">
+                <img src="./images/banner01_03.png" alt="" class="img3 animated fadeIn">
+            </div>
+        </div>
+        <div class="banner_item banner_2">
+            <div class="banner_item_content">
+                <img src="./images/banner02_01.png" alt="" class="img1 animated fadeInLeft">
+                <img src="./images/banner02_02.png" alt="" class="img2 animated fadeInRight">
+                <img src="./images/banner02_03.png" alt="" class="img3 animated fadeIn">
+            </div>
+        </div>
+        <div class="banner_item banner_3">
+            <div class="banner_item_content">
+                <img src="./images/banner03_01.png" alt="" class="img1 animated fadeInLeft">
+                <img src="./images/banner03_02.png" alt="" class="img2 animated bounceInRight">
+                <img src="./images/banner01_03.png" alt="" class="img3 animated fadeIn">
+            </div>
+        </div>
+    </div>
+    <!--主要产品-->
+    <div class="module product">
+        <img src="./images/goOn_icon01.png" alt="" class="ionItem">
+        <h1 class="product_title1">主要产品</h1>
+        <h2 class="product_title2">Our Wroks</h2>
+        <img src="./images/three_points01.png" alt="" class="imgItem">
+
+        <!--产品内容-->
+        <div class="content_wrap clear">
+            <div class="now_line fl">
+                <div class="now_line_item now"><i></i><span></span></div>
+                <div class="now_line_item"><i></i><span></span></div>
+                <div class="now_line_item"><i></i><span></span></div>
+                <div class="now_line_item"><i></i><span></span></div>
+                <div class="now_line_item"><i></i><span></span></div>
+                <div class="now_line_item"><i></i><span></span></div>
+            </div>
+
+            <!--产品详情-->
+            <div class="contents product_contents fl">
+                <div class="content_item now">
+                    <div class="content_left">
+                        <img src="./images/chanpin_image01.jpg" alt="">
+                    </div>
+                    <div class="content_rigth">
+                        <h1>小鸟掌学
+                            <span class="pen"></span>
+                        </h1>
+                        <div class="content_body">
+                            <div class="p1">
+                                <img src="./images/xiaoniao_icon.png" alt="">
+                                <h2>概述</h2>
+                                <p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。八戒教育负责小鸟掌学的运营、推广和研发等工作。</p>
+                            </div>
+                            <div class="p2">
+                                <p>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+                                <p>我们做的是“新学习、新媒体”！</p>
+                                <p>帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智(比拼式学习)！</p>
+                            </div>
+                            <div class="tip">
+                                <img src="./images/yinhao_you.png" alt="" class="tip_img_you">
+                                <div>学我所用、学以致用</div>
+                                <img src="./images/yinhao_zuo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_item ">
+                    <div class="content_left">
+                        <img src="./images/chanpin_image02.jpg" alt="">
+                    </div>
+                    <div class="content_rigth">
+                        <h1>小鸟掌学
+                            <span class="pen"></span>
+                        </h1>
+                        <div class="content_body">
+
+                            <div class="p2">
+                                <p class="content_item2_p">
+                                    <span>随</span>
+                                    着智能手机应用，微学习（即微观背景下的学习）已经开始飞速蔓延，通过对学习内容或者学习时间进行分割，使学员对学习内容进行碎片化的学习，在企业内它可以以正式或随意的方式推送给学员。作为一种人才培养方式，微课能较好的补充实体培训中无法实现的可移动性、持续性、重复性、随时随地等不足。这有助于企业建立规范的培养体系，提高全员素质，从而达到提升企业经济效益，并建立一支忠诚善战的员工队伍。
+                                </p>
+                            </div>
+                            <div class="tip content_item2">
+                                <img src="./images/yinhao_you.png" alt="" class="tip_img_you">
+                                <div>学我所用、学以致用</div>
+                                <img src="./images/yinhao_zuo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_item">
+                    <div class="content_left">
+                        <img src="./images/chanpin_image03.jpg" alt="">
+                    </div>
+                    <div class="content_rigth">
+                        <h1>小鸟掌学对企业的价值
+                            <span class="pen"></span>
+                        </h1>
+                        <div class="content_body">
+                            <div class="p2">
+                                <p style="margin-top:20px;">1) 帮助企业转变为学习型组织，促进全员持续学习；</p>
+                                <p>2) 加速企业内部知识的传播，提高管理、操作和经验技巧的传承；</p>
+                                <p>3) 营造企业比拼式学习氛围，挖掘实战精华</p>
+                                <p style="margin-top:120px;">4) 降低企业培训的时间和金钱成本 ，提高培训效率和培训质量；</p>
+                                <p>5) 增加凝聚力，提高员工的忠诚度，做到“上下同欲”；</p>
+                                <p>6) 增强企业供应商、经销商的知识技能的提高，形成“供应链学习模式”；</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_item">
+                    <div class="content_left">
+                        <img src="./images/chanpin_image04.jpg" alt="">
+                    </div>
+                    <div class="content_rigth">
+                        <h1>“小鸟掌学”云平台
+                            <span class="pen"></span>
+                        </h1>
+                        <div class="content_body">
+                            <div class="p2">
+                                <p style="line-height: 26px;"><span style="color: #311759">“小鸟掌学”云平台</span>是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。
+                                </p>
+                                <p style="line-height: 26px; margin-top: 100px;">
+                                    “小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_item">
+                    <div class="content_left">
+                        <img src="./images/chanpin_image05.jpg" alt="">
+                    </div>
+                    <div class="content_rigth">
+                        <h1>“小鸟掌学”云平台
+                            <span class="pen"></span>
+                        </h1>
+                        <div class="content_body">
+                            <div class="p2">
+                                <p style="margin-top:20px">“小鸟掌学”云平台是企业战略变革的工具；</p>
+                                <p>“小鸟掌学”云平台是企业文化重要的组成部分；</p>
+                                <p>“小鸟掌学”云平台是企业培训的重要支撑手段和实施保障机制；</p>
+                                <p style="margin-top: 110px;">“小鸟掌学”云平台是企业上下游意识形态统一的桥梁；</p>
+                                <p>“小鸟掌学”云平台是企业经验分享的平台；</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_item">
+                    <div class="content_left">
+                        <img src="./images/chanpin_image06.jpg" alt="">
+                    </div>
+                    <div class="content_rigth">
+                        <h1>“小鸟掌学”云平台
+                            <span class="pen"></span>
+                        </h1>
+                        <div class="content_body">
+                            <div class="p2">
+                                <p style="line-height: 26px; margin-top:20px;">
+                                    “小鸟掌学”云平台本质上是一种正规化教学管理机制，但它更突破了时间、地域、成本、固定性的限制（绝非在线浏览网页，看电子书籍和一些视音频上）。“小鸟掌学”改变了企业现有培训的“双高困局”（高成本、高误工），实现了
+                                    “双低学习模式”（低成本、低误工）。</p>
+                                <p style="line-height: 26px; margin-top:90px;">
+                                    当今，科学技术迅猛发展，社会文化不断进步，“终身教育、终身学习”将被越来越多的人所认识。面对未来，小鸟掌学将不断努力，以一流的运营和服务，成为企业首选的、长期的、可信赖的学习资源提供商、运营服务提供商，为社会各行各业的发展和国家经济实力的增强，做出新的贡献。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="change_line">
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
+        </div>
+    </div>
+    <!--公司简介-->
+    <div class="jianjie_wrap">
+        <!--借用product类的样式， 用jianjie类实现自己的样式-->
+        <div class="module product jianjie">
+            <h1 class="jianjie_title1">公司简介</h1>
+            <h2 class="jianjie_title2">About Company</h2>
+            <img src="./images/three_points01.png" alt="" class="imgItem">
+
+
+            <div class="content_wrap clear">
+                <div class="now_line fl">
+                </div>
+
+                <!--公司详情-->
+                <div class="contents fl">
+                    <div class="content_item now">
+                        <div class="content_left">
+                            <img src="./images/jianjie_image01.jpg" alt="">
+                        </div>
+                        <div class="content_rigth">
+                            <h1>八戒教育
+                                <span class="pen"></span>
+                            </h1>
+                            <div class="content_body">
+                                <div class="p1">
+                                    <img src="./images/xiaoniao_icon.png" alt="">
+                                    <h2>概述</h2>
+                                    <p>八戒教育，源自北京市专业技术人员继续教育基地的在线培训平台，经过多年的积累，我们已经拥有强大的教育产品设计开发团队，拥有众多在线教育产品。</p>
+                                </div>
+                                <div class="p2">
+                                    <p>
+                                        在线教育，正在改变人们的学习方式，微课、微学习的流行，更是让碎片化的时间得到充分的利用，我们有理由相信，在线微学习，将成为未来在线教育的主流模式。我们全新推出企业培训微学平台—
+                                        <a href="javascript:;" style="color:#fff">小鸟掌学</a>
+                                        ，全面覆盖PC、手机、平板的学习方式，极高自由度的培训选择，企业可选择购买平台在售课程，或自己上传课程。
+                                    </p>
+                                </div>
+                                <div class="tip">
+                                    <img src="./images/yinhao_you.png" alt="" class="tip_img_you">
+                                    <div>企业培训，从未如此简单</div>
+                                    <img src="./images/yinhao_zuo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="change_line">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--业务范围-->
+    <div class="module yewu">
+        <img src="./images/yewu_zhiyinimg.jpg" alt="" class="icon">
+        <h1 class="yewu_title1">业务范围</h1>
+        <h2 class="yewu_title2">Business Scope</h2>
+        <img src="./images/three_points01.png" alt="" class="imgItem">
+        <!--业务内容-->
+        <div class="yewe_content">
+            <div class="yewucontent_simple">
+                <div class="number">01</div>
+                <div class="title">
+                    <h1>企业培训平台</h1>
+                    <p>Enterprise training platform</p>
+                </div>
+                <div class="center_img">
+                    <img src="./images/business_cimg01.png" alt="">
+                </div>
+                <div class="sample_description">
+                    <p>
+                        我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！
+                    </p>
+                    <p>
+                        我们做的是“新学习、新媒体”！
+                    </p>
+                </div>
+                <div class="shousuo_icon zhankai"></div>
+            </div>
+            <div class="yewucontent_ditail show">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。</p>
+                <p>“小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益。</p>
+            </div>
+        </div>
+        <div class="yewe_content">
+            <div class="yewucontent_simple">
+                <div class="number">02</div>
+                <div class="title">
+                    <h1>小鸟掌学云服务</h1>
+                    <p>cloud services</p>
+                </div>
+                <div class="center_img">
+                    <img src="./images/business_cimg02.png" alt="">
+                </div>
+                <div class="sample_description">
+                    <p>
+                        我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！
+                    </p>
+                    <p>
+                        我们做的是“新学习、新媒体”！
+                    </p>
+                </div>
+                <div class="shousuo_icon"></div>
+            </div>
+            <div class="yewucontent_ditail">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。</p>
+                <p>“小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益。</p>
+                <p>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+                <p>我们做的是“新学习、新媒体”！</p>
+                <p>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+                <p>我们做的是“新学习、新媒体”！</p>
+            </div>
+        </div>
+        <div class="yewe_content">
+            <div class="yewucontent_simple">
+                <div class="number">02</div>
+                <div class="title">
+                    <h1>企业培训课程内容提供</h1>
+                    <p>Enterprise training course</p>
+                </div>
+                <div class="center_img">
+                    <img src="./images/business_cimg03.png" alt="">
+                </div>
+                <div class="sample_description">
+                    <p>
+                        我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！
+                    </p>
+                    <p>
+                        我们做的是“新学习、新媒体”！
+                    </p>
+                </div>
+                <div class="shousuo_icon"></div>
+            </div>
+            <div class="yewucontent_ditail">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。</p>
+                <p>“小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益。</p>
+            </div>
+        </div>
+    </div>
+
+    <!--团队介绍-->
+    <div class="module team">
+        <img src="./images/yewu_zhiyinimg.jpg" alt="" class="icon">
+        <h1 class="team_title1">团队介绍</h1>
+        <h2 class="team_title2">Our Team</h2>
+        <img src="./images/three_points01.png" alt="" class="imgItem">
+        <div class="teamcontent_wrap">
+            <!--选择操作-->
+            <div class="team_change banner_change">
+                <span class="prev"></span>
+                <div class="middle_points">
+                    <div class="middle_wrap">
+                        <div class="middle_items">
+                            <span class="middle_item item1 middle_item_select"></span>
+                            <span class="middle_item item2"></span>
+                            <span class="middle_item item3 middle_item_last"></span>
+                        </div>
+                    </div>
+                </div>
+                <span class="next"></span>
+            </div>
+            <!--团队成员-->
+            <div class="teammove_move">
+                <div class="team_move">
+                    <div class="twoteam_wrap item1">
+                        <div class="team_box">
+                            <div class="heading">
+                                <img src="./images/team_img02.png" alt="">
+                                <a href="javascipt:;"></a>
+                            </div>
+                            <div class="name_warp">
+                                <div class="name">张三</div>
+                                <div class="job_title">Java工程师/经理</div>
+                            </div>
+                            <div class="description">十年Java开发经验，精通各种java框架，对于前端也有深刻的研究。</div>
+                            <div class="send_email"><a href="javascript:;"><i class="icon"></i><span>发送邮件</span></a>
+                            </div>
+                            <div class="other_contacts">
+                                <div class="weibo" title="微博"></div>
+                                <div class="qq" title="QQ"></div>
+                                <div class="github" title="github"></div>
+                                <div class="weixin" title="微信"></div>
+                            </div>
+                        </div>
+                        <div class="team_box">
+                            <div class="heading">
+                                <img src="./images/team_img03.png" alt="">
+                                <a href="javascipt:;"></a>
+                            </div>
+                            <div class="name_warp">
+                                <div class="name">李四</div>
+                                <div class="job_title">前端工程师/设计师</div>
+                            </div>
+                            <div class="description">牛逼的前端工程师，牛逼的设计师，伪文艺青年一枚。</div>
+                            <div class="send_email"><a href="javascript:;"><i class="icon"></i><span>发送邮件</span></a>
+                            </div>
+                            <div class="other_contacts">
+                                <div class="weibo" title="微博"></div>
+                                <div class="qq" title="QQ"></div>
+                                <div class="github" title="github"></div>
+                                <div class="weixin" title="微信"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="twoteam_wrap item2">
+                        <div class="team_box">
+                            <div class="heading">
+                                <img src="./images/team_img01.png" alt="">
+                                <a href="javascipt:;"></a>
+                            </div>
+                            <div class="name_warp">
+                                <div class="name">王五</div>
+                                <div class="job_title">合伙人</div>
+                            </div>
+                            <div class="description">暂未更新，敬请期。</div>
+                            <div class="send_email"><a href="javascript:;"><i class="icon"></i><span>发送邮件</span></a>
+                            </div>
+                            <div class="other_contacts">
+                                <div class="weibo" title="微博"></div>
+                                <div class="qq" title="QQ"></div>
+                                <div class="github" title="github"></div>
+                                <div class="weixin" title="微信"></div>
+                            </div>
+                        </div>
+                        <div class="team_box">
+                            <div class="heading">
+                                <img src="./images/team_img01.png" alt="">
+                                <a href="javascipt:;"></a>
+                            </div>
+                            <div class="name_warp">
+                                <div class="name">陈七</div>
+                                <div class="job_title">技术支持</div>
+                            </div>
+                            <div class="description">暂未更新，敬请期。</div>
+                            <div class="send_email"><a href="javascript:;"><i class="icon"></i><span>发送邮件</span></a>
+                            </div>
+                            <div class="other_contacts">
+                                <div class="weibo" title="微博"></div>
+                                <div class="qq" title="QQ"></div>
+                                <div class="github" title="github"></div>
+                                <div class="weixin" title="微信"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="twoteam_wrap item3">
+                        <div class="team_box">
+                            <div class="heading">
+                                <img src="./images/team_img01.png" alt="">
+                                <a href="javascipt:;"></a>
+                            </div>
+                            <div class="name_warp">
+                                <div class="name">张张</div>
+                                <div class="job_title">行政</div>
+                            </div>
+                            <div class="description">暂未更新，敬请期待。</div>
+                            <div class="send_email"><a href="javascript:;"><i class="icon"></i><span>发送邮件</span></a>
+                            </div>
+                            <div class="other_contacts">
+                                <div class="weibo" title="微博"></div>
+                                <div class="qq" title="QQ"></div>
+                                <div class="github" title="github"></div>
+                                <div class="weixin" title="微信"></div>
+                            </div>
+                        </div>
+                        <div class="team_box">
+                            <div class="heading">
+                                <img src="./images/team_img01.png" alt="">
+                                <a href="javascipt:;"></a>
+                            </div>
+                            <div class="name_warp">
+                                <div class="name">赵六</div>
+                                <div class="job_title">合伙人</div>
+                            </div>
+                            <div class="description">暂未更新，敬请期待。</div>
+                            <div class="send_email"><a href="javascript:;"><i class="icon"></i><span>发送邮件</span></a>
+                            </div>
+                            <div class="other_contacts">
+                                <div class="weibo"></div>
+                                <div class="qq"></div>
+                                <div class="github"></div>
+                                <div class="weixin"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--合作机构-->
+    <div class="hezou_wrap">
+        <div class="module hezuo">
+            <img src="./images/hezuo_topbg.png" alt="">
+            <h1 class="hezuo_title1">合作机构</h1>
+            <h2 class="hezuo_title2">Our Partners</h2>
+            <img src="./images/three_points01.png" alt="" class="imgItem">
+            <div class="hezoucontent_wrap clear">
+                <div class="pantner fl">
+                    <h1 class="pantner_title1">合作机构</h1>
+                    <h2 class="pantner_title2">Our Partners</h2>
+                    <div class="pantner_box">
+                        <div class="pantner_item"><a href=""><img src="./images/pLogo01.png" alt=""></a></div>
+                        <div class="pantner_item"><a href=""><img src="./images/pLogo02.png" alt=""></a></div>
+                        <div class="pantner_item"><a href=""><img src="./images/pLogo03.png" alt=""></a></div>
+                        <div class="pantner_item"><a href=""><img src="./images/pLogo04.png" alt=""></a></div>
+                        <div class="pantner_item"><a href=""><img src="./images/pLogo05.png" alt=""></a></div>
+                        <div class="pantner_item"><a href=""><img src="./images/pLogo06.png" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="user fl">
+                    <h1 class="user_title1">用户</h1>
+                    <h2 class="user_title2">3000+</h2>
+                    <a href="" class="more"></a>
+                    <div class="user_box">
+                        <div class="user_item"><a href=""><img src="./images/uLogo01.png" alt=""></a></div>
+                        <div class="user_item"><a href=""><img src="./images/uLogo02.png" alt=""></a></div>
+                        <div class="user_item"><a href=""><img src="./images/uLogo03.png" alt=""></a></div>
+                        <div class="user_item"><a href=""><img src="./images/uLogo04.png" alt=""></a></div>
+                        <div class="user_item"><a href=""><img src="./images/uLogo05.png" alt=""></a></div>
+                        <div class="user_item"><a href=""><img src="./images/uLogo06.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/hezuo_bottombg.png" alt="">
+        </div>
+    </div>
+
+    <!--联系我们-->
+    <div class="module lianxi">
+        <h1 class="lianxi_title1">联系我们</h1>
+        <h2 class="lianxi_title2">Contact Us</h2>
+        <img src="./images/three_points01.png" alt="" class="imgItem">
+        <div class="input_wrap">
+            <form>
+                <div class="input_box input_box1 name"><i class="icon"></i><input type="text" placeholder="*名字"></div>
+                <div class="input_box input_box2 email"><i class="icon"></i><input type="text" placeholder="*邮箱"></div>
+                <div class="input_box phone"><i class="icon"></i><input type="text" placeholder="*电话"></div>
+                <div class="input_box textarea_box"><i class="icon"></i><textarea name="" id="" cols="30" rows="10"
+                                                                                  placeholder="*说点什么吧"></textarea></div>
+                <div class="hint1"><span>*</span>亲，留言的时候，要请留下你的姓名和联系方式哦~</div>
+                <div class="hint2">谢谢你的留言，我们将及时回复！</div>
+                <div class="input_box sentbnt"><i class="icon"></i><span>发送留言</span></div>
+            </form>
+        </div>
+        <div class="lianxi_way">
+            <div class="way_item">
+                <img src="./images/lianxi_icon01.png" alt="">
+                <div class="way_content">
+                    <h1>地址</h1>
+                    <p>北京市昌平区站前东街2号</p>
+                    <p>回龙观田园风光综合商业楼3层</p>
+                    <p>邮编：100081</p>
+                </div>
+            </div>
+            <div class="way_item way_item2">
+                <img src="./images/lianxi_icon02.png" alt="">
+                <div class="way_content">
+                    <h1>电话</h1>
+                    <p>总机：010-8888888</p>
+                </div>
+            </div>
+            <div class="way_item">
+                <img src="./images/lianxi_icon03.png" alt="">
+                <div class="way_content">
+                    <h1>网络途径</h1>
+                    <p>邮箱：edu@zbj.com</p>
+                    <p>微博：aaaaaaa_sina</p>
+                    <p>微信：ccccccc_weixin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--地图-->
+    <div class="map" >
+        <div class="top_img"><img src="./images/map_topimg.png" alt=""></div>
+        <div id="mapContent" class="baidu_map"></div>
+        <div class="bottom_img"></div>
+    </div>
+</div>
+<div id="footer">
+</div>
+
+<!--返回顶部-->
+<div class="fixed_tip" id="scrollTop_wrap">
+    <div class="scroll_top" id="scrollTop"></div>
+    <div class="fixed_contactus"></div>
+</div>
+<!--百度地图js-->
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2.0&ak=3qkFf2G2rUbWKsNYmc2dDvL7"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("mapContent"); // 创建Map实例
+    var poi = new BMap.Point(106.473421,29.630919);
+    map.centerAndZoom(poi, 15); // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+    map.setCurrentCity("重庆"); // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+
+    //创建和初始化地图函数：
+    function initMap() {
+        addMapControl();//向地图添加控件
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({
+            anchor : BMAP_ANCHOR_TOP_LEFT,
+            type : BMAP_NAVIGATION_CONTROL_LARGE
+        });
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({
+            anchor : BMAP_ANCHOR_BOTTOM_RIGHT,
+            isOpen : 1
+        });
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({
+            anchor : BMAP_ANCHOR_BOTTOM_LEFT
+        });
+        map.addControl(ctrl_sca);
+    }
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+        '<img src="images/xiaoniao_icon.png" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+        '地址：重庆两江新区大竹林华山南路16号<br/>电话：(010)xxx-xxxxxxxx<br/>简介：互联网学院2#' +
+        '</div>';
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+    searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+        title  : "八戒教育",      //标题
+        width  : 290,             //宽度
+        height : 105,              //高度
+        panel  : "panel",         //检索结果面板
+        enableAutoPan : true,     //自动平移
+        searchTypes   :[
+            BMAPLIB_TAB_TO_HERE,  //到这里去
+            BMAPLIB_TAB_SEARCH,   //周边检索
+            BMAPLIB_TAB_FROM_HERE //从这里出发
+        ]
+    });
+
+
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.addEventListener("click", function(e){
+        searchInfoWindow.open(marker);
+    })
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    map.addOverlay(marker); //在地图中添加marker
+    initMap();//创建和初始化地图
+</script>
+
 </body>
 
 </html>
